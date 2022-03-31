@@ -235,8 +235,22 @@ document.querySelector('.b-9').onclick = t9;
 //41_42_43_44_45_46_47_48_49_50_
 
 
+let out10 = document.querySelector('.out-10');
 function t10() {
-
+  let a = ``;
+  for (let i = 0; i < 5; i++) {
+    let b = i;
+    for (let i = 1; i < 11; i++) {
+      if (i == 10) {
+        a += `${i}_`;
+      }
+      else {
+        a += `${b}${i}_`;
+      }
+    }
+    a += `<br>`;
+  }
+  out10.innerHTML = a;
 }
 
 document.querySelector('.b-10').onclick = t10;
