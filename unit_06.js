@@ -5,8 +5,16 @@
 // </pre>
 // <p>где звездочкa рисуются с помощью внутреннего цикла от 0 до 3, а _ с помощью внешнего.</p>
 
+let out1 = document.querySelector('.out-1');
 function t1() {
-
+  let a = ``;
+  for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
+      a += "*";
+    }
+    a += "_";
+  }
+  out1.innerHTML = a;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -20,8 +28,18 @@ document.querySelector('.b-1').onclick = t1;
 // 3
 // *_*_*_
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифру и перенос строки br, внутренний - *_, и после этого внешний - знак переноса.</p>
-function t2() {
 
+let out2 = document.querySelector('.out-2');
+function t2() {
+  let a = ``;
+  for (let i = 1; i < 4; i++) {
+    a += `${i}<br>`;
+    for (let i = 1; i < 4; i++) {
+      a += "*_";
+    }
+    a += "<br>";
+  }
+  out2.innerHTML = a;
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -35,8 +53,17 @@ document.querySelector('.b-2').onclick = t2;
 // *_*_*_
 
 // <p>Решить задачу с помощью вложенных циклов. Внутренний цикл выводит *_,  внешний цикл выводит перенос строки br.</p>
-function t3() {
 
+let out3 = document.querySelector('.out-3');
+function t3() {
+  let a = ``;
+  for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
+      a += "*_";
+    }
+    a += "<br>";
+  }
+  out3.innerHTML = a;
 }
 
 document.querySelector('.b-3').onclick = t3;
