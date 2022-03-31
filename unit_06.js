@@ -155,8 +155,18 @@ document.querySelector('.b-6').onclick = t6;
 // ***
 // ****
 
+let out7 = document.querySelector('.out-7');
 function t7() {
-
+  let a = ``;
+  let b = 0;
+  for (let i = 1; i < 5; i++) {
+    b = i;
+    for (let i = 0; i < b; i++) {
+      a += "*";
+    }
+    a += `<br>`;
+  }
+  out7.innerHTML = a;
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -172,8 +182,18 @@ document.querySelector('.b-7').onclick = t7;
 // **
 // *
 
+let out8 = document.querySelector('.out-8');
 function t8() {
-
+  let a = ``;
+  let b = 0;
+  for (let i = 5; i > 0; i--) {
+    b = i;
+    for (let i = b; i > 0; i--) {
+      a += "*";
+    }
+    a += `<br>`;
+  }
+  out8.innerHTML = a;
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -188,8 +208,18 @@ document.querySelector('.b-8').onclick = t8;
 // 1_2_3_4_
 // 1_2_3_4_5_
 
+let out9 = document.querySelector('.out-9');
 function t9() {
-
+  let a = ``;
+  let b = 0;
+  for (let i = 1; i < 6; i++) {
+    b = i;
+    for (let i = 0; i < b; i++) {
+      a += `${i + 1}_`;
+    }
+    a += `<br>`;
+  }
+  out9.innerHTML = a;
 }
 
 document.querySelector('.b-9').onclick = t9;
